@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Exam Results</h1>
+  <table border="1">
+    <tr>
+      <th>Student</th>
+      <th>Exam</th>
+      <th>Score</th>
+      <th>Total</th>
+      <th>Passed</th>
+      <th>Taken At</th>
+    </tr>
+    {% for item in results %}
+    <tr>
+      <td>{{ item.student.username }}</td>
+      <td>{{ item.exam.title }}</td>
+      <td>{{ item.score }}</td>
+      <td>{{ item.total_questions }}</td>
+      <td>{{ item.passed }}</td>
+      <td>{{ item.taken_at }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

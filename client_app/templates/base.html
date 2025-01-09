@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam Frontend</title>
+</head>
+<body>
+    <div>
+       
+        <a href="{% url 'register' %}">Register</a> |
+        <a href="{% url 'login' %}">Login</a> |
+        <a href="{% url 'logout' %}">Logout</a> |
+        <a href="{% url 'exam_list' %}">Exam List</a> |
+        <a href="{% url 'exam_results' %}">My Results</a>
+    </div>
+    <hr>
+    {% if messages %}
+      <ul style="color: red;">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% block content %}{% endblock %}
+</body>
+</html>

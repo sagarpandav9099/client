@@ -1,0 +1,86 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django static and media files (only if they are generated dynamically)
+static/
+media/
+
+# Django migrations (optional, but it's good practice to include them)
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Environment Variables
+.env
+
+# Django secret key and sensitive information
+secrets.json
+
+# Database files
+*.sqlite3
+
+# Ignore virtual environments
+myenv/
+myvenv/
+venv/
+ENV/
+env/
+staticfiles/
+
+# Ignore settings for development environment (if you have separate settings for development and production)
+settings_dev.py
+
+# Ignore PyCharm project settings
+.idea/
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+.tox/
+
+#ignore log folder
+logs/
+
+# Ignore test result files
+*.cover
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+*.egg
+*.egg-info/
+
+# Ignore distribution and build directories
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+.Python
+
+# Ignore pip and wheel
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore local development-related files
+*.log
+*.bak
+*.orig
+*.swp
+
+# Ignore MacOS and Linux specific files
+.DS_Store
+Thumbs.db
+desktop.ini
